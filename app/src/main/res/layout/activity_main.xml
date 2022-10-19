@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/callbtn"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="358dp"
+        android:text="CALL"
+        app:layout_constraintBottom_toTopOf="@+id/btnphoto"
+        app:layout_constraintEnd_toEndOf="@+id/smsbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/smsbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/smsbtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:text="SMS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callbtn" />
+
+    <Button
+        android:id="@+id/btnphoto"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="77dp"
+        android:text="TAKE PHOTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mpesabtn" />
+
+    <Button
+        android:id="@+id/emailbtn"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="433dp"
+        android:text="EMAIL"
+        app:layout_constraintBottom_toTopOf="@+id/btnphoto"
+        app:layout_constraintStart_toStartOf="@+id/callbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mpesabtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginBottom="269dp"
+        android:text="MPESA"
+        app:layout_constraintBottom_toTopOf="@+id/btnphoto"
+        app:layout_constraintEnd_toEndOf="@+id/smsbtn"
+        app:layout_constraintStart_toStartOf="@+id/smsbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
